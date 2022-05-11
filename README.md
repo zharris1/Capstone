@@ -22,5 +22,9 @@ The user would take a picture of black jeans and we would recommend other articl
 The recommendation would further be based on fit, color, and user preference. 
 The user then has the option to buy the recommended articles of clothing within the app. 
 
+#### Application Flow
+Please use the below image as reference for the application's flow: 
+<img src = "Capstone Application Flow.png" alt = "Capstone Application Flow Diagram"/>
+
 #### Deployment
 We are planning on developing a web/mobile application for the user to interact with to use the recommendation service.
