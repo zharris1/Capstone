@@ -12,9 +12,6 @@ class Recommender:
 
     Functions: 
 
-    __init__(self)
-    Dunder method
-
     
     """
 

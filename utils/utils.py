@@ -8,13 +8,28 @@ class Utils:
 
     -------------------------------------------------------------------------------------------
 
-    Functions: 
-
-    __init__(self)
-    Dunder method
-
+    Functions:
+    
     
     """
     
-    def __init__(self):
-        pass
+    def import_libraries(self):
+        import os
+        import argparse
+        from __future__ import print_function
+
+        import torch
+        import torchrec
+        import torch.distributed as dist
+        import torch.nn as nn
+        import torch.nn.functional as F
+        import torch.optim as optim
+        from torchvision import datasets, transforms
+        from torch.optim.lr_scheduler import StepLR
+
+        import numpy as np
+        import pandas as pd 
+
+if __name__ == '__main__':
+    utils = Utils()
+    utils.import_libraries()
