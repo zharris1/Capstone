@@ -32,5 +32,5 @@ Please use the below image as reference for the application's flow:
 We are planning on developing a web/mobile application for the user to interact with to use the recommendation service.
 
 #### To Run
-pip install -r requirements.txt
+pip install -r requirements.txt  
 cd src && run.py
