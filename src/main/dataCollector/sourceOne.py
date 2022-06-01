@@ -1,3 +1,16 @@
+from __future__ import print_function
+import os
+import argparse
+import torch
+import torchrec
+import torch.distributed as dist
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+from torchvision import datasets, transforms
+from torch.optim.lr_scheduler import StepLR
+import numpy as np
+
 from utils.utils import Utils
 
 class SourceOne(nn.Module):
@@ -113,32 +126,21 @@ def main():
                        'shuffle': True}
         train_kwargs.update(cuda_kwargs)
         test_kwargs.update(cuda_kwargs)
+    
+    train_set= Utils().trainMNIST()
+    test_set= Utils().testMNIST()
+    
+    train_loader = torch.utils.data.DataLoader(train_set,**train_kwargs)
+    test_loader = torch.utils.data.DataLoader(test_set, **test_kwargs)
 
-    transform=transforms.Compose([
-        transforms.ToTensor(),
-        transforms.Normalize((0.1307,), (0.3081,))
-        ])
-    dataset1 = datasets.MNIST('../data', train=True, download=True,
-                       transform=transform)
-    dataset2 = datasets.MNIST('../data', train=False,
-                       transform=transform)
-    train_loader = torch.utils.data.DataLoader(dataset1,**train_kwargs)
-    test_loader = torch.utils.data.DataLoader(dataset2, **test_kwargs)
-
-    model = Net().to(device)
+    model = SourceOne().to(device)
     optimizer = optim.Adadelta(model.parameters(), lr=args.lr)
 
     scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
     for epoch in range(1, args.epochs + 1):
-        train(args, model, device, train_loader, optimizer, epoch)
-        test(model, device, test_loader)
+        SourceOne().train(args, model, device, train_loader, optimizer, epoch)
+        SourceOne().test(model, device, test_loader)
         scheduler.step()
 
     if args.save_model:
-        torch.save(model.state_dict(), "mnist_cnn.pt")
-
-
-if __name__ == '__main__':
-    Utils.import_libraries()
-    main()
-    
+        torch.save(model.state_dict(), "SourceOne.pt")

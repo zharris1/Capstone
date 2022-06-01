@@ -1,4 +1,4 @@
-class Recommender:
+class Recommender():
 
     """
     

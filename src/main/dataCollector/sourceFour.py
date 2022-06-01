@@ -1,6 +1,4 @@
-from utils.utils import Utils
-
-class SourceFour:
+class SourceFour():
     
     """
     

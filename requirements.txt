@@ -1,0 +1,8 @@
+torchrec
+torch.distributed
+torch.nn
+torch.nn.functional
+torch.optim
+torchvision
+torch.optim.lr_scheduler
+numpy
