@@ -1,17 +1,13 @@
 from __future__ import print_function
-import os
 import argparse
 import torch
-import torchrec
 import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
-import numpy as np
 
-from utils.utils import Utils
+from utils.utils import ToyData
 
 class SourceOne(nn.Module):
     
@@ -127,8 +123,8 @@ def main():
         train_kwargs.update(cuda_kwargs)
         test_kwargs.update(cuda_kwargs)
     
-    train_set= Utils().trainMNIST()
-    test_set= Utils().testMNIST()
+    train_set= ToyData().trainMNIST()
+    test_set= ToyData().testMNIST()
     
     train_loader = torch.utils.data.DataLoader(train_set,**train_kwargs)
     test_loader = torch.utils.data.DataLoader(test_set, **test_kwargs)

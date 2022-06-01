@@ -7,7 +7,8 @@ from main.stylist import *
 from utils.utils import *
 
 if __name__ == '__main__':
-    Utils().toyDataMNIST()
+    ToyData().trainMNIST()
+    ToyData().testMNIST()
     SourceOne()
     SourceTwo()
     SourceThree()

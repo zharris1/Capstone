@@ -1,9 +1,7 @@
-from torch.utils.data import Dataset
 from torchvision import datasets
-from torchvision.transforms import ToTensor, transforms
-import matplotlib.pyplot as plt 
+from torchvision.transforms import transforms
 
-class Utils:
+class ToyData():
     
     """
     
