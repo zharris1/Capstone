@@ -8,6 +8,8 @@ class Recommender():
 
     Returns: complete outfit recommendation to the user.
 
+    Algorithm idea: SVD (Singular Value Decomposition)
+
     -------------------------------------------------------------------------------------------
 
     Functions: 

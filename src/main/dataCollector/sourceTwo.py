@@ -11,16 +11,22 @@ from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepL
 import numpy as np
 
-class SourceTwo(nn.Module):
+class SourceTwo():
     
     """
     
     SourceTwo.py: Public clothing datasets to recognize individual articles of clothing.
 
+    Loads dataset for later consumption into model.
     -------------------------------------------------------------------------------------------
 
     Functions:
 
     """
     def __init__(self, ):
-        pass
+        
+        '''
+        Load the datasets for later consumption into model
+        '''
+
+        pass 
