@@ -49,4 +49,16 @@ class SourceFour():
         }
 
         return self.testUserProfiles
+
+    def getUserPreferencesFromFrontEnd(self):
+        
+        '''
+        This function will take user preferences from DB, which are inserted into DB from the front end.
+        '''
+        
+        self.userProfilePreferences = {
+
+        }
+
+        return self.userProfilePreferences
         
