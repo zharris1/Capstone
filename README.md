@@ -7,7 +7,7 @@ Contact information:
 
 ## Working project name: Styl
 
-Executive Summary of Service:
+Executive Summary of Service:  
 Our project will be a supervised learning classification problem, where we will recommend clothing styles that would enhance the online shopping experience for the user. Our current objective is to take a picture of an article of clothing that they own and recommend an outfit based on that picture. Our project consists of multiple parts:
 
     - The User:
@@ -19,7 +19,7 @@ Our project will be a supervised learning classification problem, where we will 
     - The Recommender:
         - Recommendation algorithm to output an outfit based on The Stylists’ findings and User’s preferences (The Recommender).
 
-For example:
+For example:  
 The user would take a picture of black jeans and we would recommend other articles of clothing (such as a blue shirt, black shoes) found in stores based on the picture. 
 The recommendation would further be based on fit, color, and user preference. 
 The user then has the option to buy the recommended articles of clothing within the app. 
