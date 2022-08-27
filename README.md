@@ -1,5 +1,5 @@
 # SMU MSDS Capstone
-Contact information: 
+Contact information:  
     - Zachary Harris: zharris@mail.smu.edu  
     - Gowtham Katta: gkatta@mail.smu.edu  
     - Joseph Woodall: woodallj@mail.smu.edu  
