@@ -9,6 +9,7 @@ Contact information:
 
 Executive Summary of Service:
 Our project will be a supervised learning classification problem, where we will recommend clothing styles that would enhance the online shopping experience for the user. Our current objective is to take a picture of an article of clothing that they own and recommend an outfit based on that picture. Our project consists of multiple parts:
+
     - The User:
         - Computer vision algorithm to read the picture of clothing the user uploads (The User).
 
