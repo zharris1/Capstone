@@ -1,9 +1,9 @@
 # SMU MSDS Capstone
 Contact information: 
-    - Zachary Harris: zharris@mail.smu.edu
-    - Gowtham Katta: gkatta@mail.smu.edu
-    - Joseph Woodall: woodallj@mail.smu.edu
-    - Advisor: Dr. Robert Slater: rslater@mail.smu.edu
+    - Zachary Harris: zharris@mail.smu.edu  
+    - Gowtham Katta: gkatta@mail.smu.edu  
+    - Joseph Woodall: woodallj@mail.smu.edu  
+    - Advisor: Dr. Robert Slater: rslater@mail.smu.edu  
 
 ## Working project name: Styl
 
