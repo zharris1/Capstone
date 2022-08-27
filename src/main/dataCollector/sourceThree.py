@@ -2,7 +2,7 @@ class SourceThree():
     
     """
     
-    SourceThree.py: Webscraped images of complete outfits from popular clothing brand advertisements.
+    SourceThree.py: H&M Dataset
 
     -------------------------------------------------------------------------------------------
 

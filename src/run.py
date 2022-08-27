@@ -7,12 +7,5 @@ from main.stylist import *
 from utils.utils import *
 
 if __name__ == '__main__':
-    ToyData().trainMNIST()
-    ToyData().testMNIST()
-    SourceOne()
-    SourceTwo()
-    SourceThree()
-    SourceFour()
-    Stylist()
-    Recommender()
+    print('Nope, the main function aint ready chief')
     

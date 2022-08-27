@@ -4,7 +4,7 @@ class SourceFour():
     
     """
     
-    SourceFour.py: User's Preferences such as size, fit, color, inseam, etc...
+    SourceFour.py: Clothing sizes, lengths, and color for each article of clothing (add style of clothing in the future)
 
     -------------------------------------------------------------------------------------------
 
@@ -49,16 +49,4 @@ class SourceFour():
         }
 
         return self.testUserProfiles
-
-    def getUserPreferencesFromFrontEnd(self):
-        
-        '''
-        This function will take user preferences from DB, which are inserted into DB from the front end.
-        '''
-        
-        self.userProfilePreferences = {
-
-        }
-
-        return self.userProfilePreferences
         
