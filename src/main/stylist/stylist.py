@@ -5,6 +5,8 @@ import torchvision.transforms as transforms
 
 from tqdm import tqdm
 
+from src.main.dataCollector.consolidated_data import ConsolidatedData
+
 class Stylist(nn.Module):
 
     """
@@ -43,9 +45,9 @@ class Stylist(nn.Module):
 
 
 
-data = [] # import data class here; train_loader, validation_loader will be going here
-train_loader = [] # to delete, only for PR
-validation_loader = [] # to delete, only for PR
+data = ConsolidatedData().dataloader(64)
+train_loader = data[0] 
+validation_loader = data[1]
 
 '''
 Notes: 
